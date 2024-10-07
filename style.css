@@ -1,39 +1,39 @@
-.contact-container .contact-subcontainer .contact__section-2__content-box1, .contact-container .contact-subcontainer .contact__section-2__content-box, .contact-container .contact-subcontainer .contact__section-1__content, .skill__overview__mail, .skill__overview__adobeprem, .skill__overview__vscode, .skill__overview__git, .skill__overview__tailwindcss, .skill__overview__nodejs, .skill__overview__c, .skill__overview__js, .skill__overview__css, .skill__overview__html, .skill__overview, .resume-container .resume__education__description, .about-container .about-subcontainer .about__text, .header, body {
+.contact-container .contact-subcontainer .contact__section-2__content-box1, .contact-container .contact-subcontainer .contact__section-2__content-box, .contact-container .contact-subcontainer .contact__section-1__content, .skill__overview-part2__mail, .skill__overview-part2__adobeprem, .skill__overview-part2__vscode, .skill__overview-part2__git, .skill__overview-part2__tailwindcss, .skill__overview-part2, .skill__overview-part1__nodejs, .skill__overview-part1__c, .skill__overview-part1__js, .skill__overview-part1__css, .skill__overview-part1__html, .skill__overview-part1, .skill__overview, .resume-container .resume__education__description, .about-container .about-subcontainer .about__text, .header, body {
   display: flex;
   flex-direction: column;
 }
 
-.skill__overview__mail-text, .skill__overview__adobeprem-text, .skill__overview__vscode-text, .skill__overview__git-text, .skill__overview__tailwindcss-text, .skill__overview__nodejs-text, .skill__overview__c-text, .skill__overview__js-text, .skill__overview__css-text, .skill__overview__html-text {
+.skill__overview-part2__mail-text, .skill__overview-part2__adobeprem-text, .skill__overview-part2__vscode-text, .skill__overview-part2__git-text, .skill__overview-part2__tailwindcss-text, .skill__overview-part1__nodejs-text, .skill__overview-part1__c-text, .skill__overview-part1__js-text, .skill__overview-part1__css-text, .skill__overview-part1__html-text {
   display: flex;
   justify-content: space-around;
   align-items: last baseline;
 }
-.skill__overview__mail-text p, .skill__overview__adobeprem-text p, .skill__overview__vscode-text p, .skill__overview__git-text p, .skill__overview__tailwindcss-text p, .skill__overview__nodejs-text p, .skill__overview__c-text p, .skill__overview__js-text p, .skill__overview__css-text p, .skill__overview__html-text p {
+.skill__overview-part2__mail-text p, .skill__overview-part2__adobeprem-text p, .skill__overview-part2__vscode-text p, .skill__overview-part2__git-text p, .skill__overview-part2__tailwindcss-text p, .skill__overview-part1__nodejs-text p, .skill__overview-part1__c-text p, .skill__overview-part1__js-text p, .skill__overview-part1__css-text p, .skill__overview-part1__html-text p {
   display: inline-block;
   margin: 0;
   padding: 10px;
   font-weight: bold;
 }
-.skill__overview__mail-text span, .skill__overview__adobeprem-text span, .skill__overview__vscode-text span, .skill__overview__git-text span, .skill__overview__tailwindcss-text span, .skill__overview__nodejs-text span, .skill__overview__c-text span, .skill__overview__js-text span, .skill__overview__css-text span, .skill__overview__html-text span {
+.skill__overview-part2__mail-text span, .skill__overview-part2__adobeprem-text span, .skill__overview-part2__vscode-text span, .skill__overview-part2__git-text span, .skill__overview-part2__tailwindcss-text span, .skill__overview-part1__nodejs-text span, .skill__overview-part1__c-text span, .skill__overview-part1__js-text span, .skill__overview-part1__css-text span, .skill__overview-part1__html-text span {
   padding: 10px;
   font-size: large;
   font-weight: 600;
 }
 
-.skill__overview__mail-progress-bar, .skill__overview__adobeprem-progress-bar, .skill__overview__vscode-progress-bar, .skill__overview__git-progress-bar, .skill__overview__tailwindcss-progress-bar, .skill__overview__nodejs-progress-bar, .skill__overview__c-progress-bar, .skill__overview__js-progress-bar, .skill__overview__css-progress-bar, .skill__overview__html-progress-bar {
+.skill__overview-part2__mail-progress-bar, .skill__overview-part2__adobeprem-progress-bar, .skill__overview-part2__vscode-progress-bar, .skill__overview-part2__git-progress-bar, .skill__overview-part2__tailwindcss-progress-bar, .skill__overview-part1__nodejs-progress-bar, .skill__overview-part1__c-progress-bar, .skill__overview-part1__js-progress-bar, .skill__overview-part1__css-progress-bar, .skill__overview-part1__html-progress-bar {
   width: 95%;
   height: 10px;
   background-color: #c1ecf0;
   margin: 0 auto;
 }
 
-.skill__overview__mail-progress-bar2, .skill__overview__adobeprem-progress-bar2, .skill__overview__vscode-progress-bar2, .skill__overview__git-progress-bar2, .skill__overview__tailwindcss-progress-bar2, .skill__overview__nodejs-progress-bar2, .skill__overview__c-progress-bar2, .skill__overview__js-progress-bar2, .skill__overview__css-progress-bar2, .skill__overview__html-progress-bar2 {
+.skill__overview-part2__mail-progress-bar2, .skill__overview-part2__adobeprem-progress-bar2, .skill__overview-part2__vscode-progress-bar2, .skill__overview-part2__git-progress-bar2, .skill__overview-part2__tailwindcss-progress-bar2, .skill__overview-part1__nodejs-progress-bar2, .skill__overview-part1__c-progress-bar2, .skill__overview-part1__js-progress-bar2, .skill__overview-part1__css-progress-bar2, .skill__overview-part1__html-progress-bar2 {
   width: 100%;
   height: 10px;
   background-color: #c1ecf0;
 }
 
-.skill__overview__mail-progress-bar-span, .skill__overview__adobeprem-progress-bar-span, .skill__overview__vscode-progress-bar-span, .skill__overview__git-progress-bar-span, .skill__overview__tailwindcss-progress-bar-span, .skill__overview__nodejs-progress-bar-span, .skill__overview__c-progress-bar-span, .skill__overview__js-progress-bar-span, .skill__overview__css-progress-bar-span, .skill__overview__html-progress-bar-span {
+.skill__overview-part2__mail-progress-bar-span, .skill__overview-part2__adobeprem-progress-bar-span, .skill__overview-part2__vscode-progress-bar-span, .skill__overview-part2__git-progress-bar-span, .skill__overview-part2__tailwindcss-progress-bar-span, .skill__overview-part1__nodejs-progress-bar-span, .skill__overview-part1__c-progress-bar-span, .skill__overview-part1__js-progress-bar-span, .skill__overview-part1__css-progress-bar-span, .skill__overview-part1__html-progress-bar-span {
   padding: 5px;
   position: relative;
   top: -14px;
@@ -259,79 +259,82 @@ legend {
 .skill__overview {
   gap: 1rem;
 }
-.skill__overview__html {
+.skill__overview-part1 {
+  gap: 1rem;
+}
+.skill__overview-part1__html {
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
   border: 1px solid;
 }
-.skill__overview__html-progress {
+.skill__overview-part1__html-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__html-progress-bar2 {
+.skill__overview-part1__html-progress-bar2 {
   animation: html-bar 10s ease-in 1s infinite;
 }
-.skill__overview__html-progress-bar-span {
+.skill__overview-part1__html-progress-bar-span {
   background-color: #ff3c00;
   border: 1px solid coral;
   animation: html-span 10s ease-in 1s infinite;
 }
-.skill__overview__css {
+.skill__overview-part1__css {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__css-progress {
+.skill__overview-part1__css-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__css-progress-bar2 {
+.skill__overview-part1__css-progress-bar2 {
   animation: css-bar 10s ease-in 1s infinite;
 }
-.skill__overview__css-progress-bar-span {
+.skill__overview-part1__css-progress-bar-span {
   background-color: #358ae0;
   border: 1px solid #87ceeb;
   animation: css-span 10s ease-in 1s infinite;
 }
-.skill__overview__js {
+.skill__overview-part1__js {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__js-progress {
+.skill__overview-part1__js-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__js-progress-bar2 {
+.skill__overview-part1__js-progress-bar2 {
   animation: js-bar 10s ease-in 1s infinite;
 }
-.skill__overview__js-progress-bar-span {
+.skill__overview-part1__js-progress-bar-span {
   background-color: #f8c201;
   border: 1px solid yellow;
   animation: js-span 10s ease-in 1s infinite;
 }
-.skill__overview__c {
+.skill__overview-part1__c {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__c-progress {
+.skill__overview-part1__c-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__c-progress-bar2 {
+.skill__overview-part1__c-progress-bar2 {
   animation: c-bar 10s ease-in 1s infinite;
 }
-.skill__overview__c-progress-bar-span {
+.skill__overview-part1__c-progress-bar-span {
   background-color: #002080;
   border: 1px solid #0066ff;
   animation: c-span 10s ease-in 1s infinite;
 }
-.skill__overview__nodejs {
+.skill__overview-part1__nodejs {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
@@ -342,103 +345,106 @@ legend {
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__nodejs-progress {
+.skill__overview-part1__nodejs-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__nodejs-progress-bar2 {
+.skill__overview-part1__nodejs-progress-bar2 {
   animation: nodejs-bar 10s ease-in 1s infinite;
 }
-.skill__overview__nodejs-progress-bar-span {
+.skill__overview-part1__nodejs-progress-bar-span {
   background-color: #009933;
   border: 1px solid #003300;
   animation: nodejs-span 10s ease-in 1s infinite;
 }
-.skill__overview__tailwindcss {
+.skill__overview-part2 {
+  gap: 1rem;
+}
+.skill__overview-part2__tailwindcss {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__tailwindcss-progress {
+.skill__overview-part2__tailwindcss-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__tailwindcss-progress-bar2 {
+.skill__overview-part2__tailwindcss-progress-bar2 {
   animation: tailwindcss-bar 10s ease-in 1s infinite;
 }
-.skill__overview__tailwindcss-progress-bar-span {
+.skill__overview-part2__tailwindcss-progress-bar-span {
   background-color: #009999;
   border: 1px solid #00ffcc;
   animation: tailwindcss-span 10s ease-in 1s infinite;
 }
-.skill__overview__git {
+.skill__overview-part2__git {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__git-progress {
+.skill__overview-part2__git-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__git-progress-bar2 {
+.skill__overview-part2__git-progress-bar2 {
   animation: git-bar 10s ease-in 1s infinite;
 }
-.skill__overview__git-progress-bar-span {
+.skill__overview-part2__git-progress-bar-span {
   background-color: #751aff;
   border: 1px solid #3333cc;
   animation: git-span 10s ease-in 1s infinite;
 }
-.skill__overview__vscode {
+.skill__overview-part2__vscode {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__vscode-progress {
+.skill__overview-part2__vscode-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__vscode-progress-bar2 {
+.skill__overview-part2__vscode-progress-bar2 {
   animation: vscode-bar 10s ease-in 1s infinite;
 }
-.skill__overview__vscode-progress-bar-span {
+.skill__overview-part2__vscode-progress-bar-span {
   background-color: #002db3;
   border: 1px solid #1a53ff;
   animation: vscode-span 10s ease-in 1s infinite;
 }
-.skill__overview__adobeprem {
+.skill__overview-part2__adobeprem {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__adobeprem-progress {
+.skill__overview-part2__adobeprem-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__adobeprem-progress-bar2 {
+.skill__overview-part2__adobeprem-progress-bar2 {
   animation: adobeprem-bar 10s ease-in 1s infinite;
 }
-.skill__overview__adobeprem-progress-bar-span {
+.skill__overview-part2__adobeprem-progress-bar-span {
   background-color: #000066;
   border: 1px solid #1a1aff;
   animation: adobeprem-span 10s ease-in 1s infinite;
 }
-.skill__overview__mail {
+.skill__overview-part2__mail {
   border: 1px solid white;
   border-radius: 20px;
   box-shadow: -5px 5px 7px darkgrey;
   background-color: #0f0f0f;
   padding: 10px;
 }
-.skill__overview__mail-progress {
+.skill__overview-part2__mail-progress {
   padding: 5px 0 20px;
 }
-.skill__overview__mail-progress-bar2 {
+.skill__overview-part2__mail-progress-bar2 {
   animation: mail-bar 10s ease-in 1s infinite;
 }
-.skill__overview__mail-progress-bar-span {
+.skill__overview-part2__mail-progress-bar-span {
   background-color: #0033cc;
   border: 1px solid #00b8e6;
   animation: mail-span 10s ease-in 1s infinite;
@@ -1197,6 +1203,9 @@ footer h4 {
     margin: 0 auto;
     gap: 2rem;
     padding-bottom: 25px;
+  }
+  .skill__overview-part1, .skill__overview-part2 {
+    gap: 2rem;
   }
   .skill-area .skill__overview__html-text span {
     font-size: 20px;

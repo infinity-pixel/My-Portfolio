@@ -96,6 +96,11 @@
         margin: 0 auto;
         gap: 2rem;
         padding-bottom: 25px;
+
+
+        &-part1, &-part2 {
+            gap: 2rem;
+        }
     }
 
 

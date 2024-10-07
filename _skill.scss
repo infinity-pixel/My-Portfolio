@@ -19,353 +19,363 @@
     gap: 1rem;
 
 
-    // html PROGRESS ------------------------
-    &__html {
-        @extend %flex-column;   // _extend SECTION 1 ----------------------------
-        @include border-card;   // _mixins SECTION 4 ----------------------------
-        border: 1px solid;
+    &-part1 {
+        @extend %flex-column;      // _extend SECTION 1 ----------------------------
+        gap: 1rem;
 
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
+        // html PROGRESS ------------------------
+        &__html {
+            @extend %flex-column;   // _extend SECTION 1 ----------------------------
+            @include border-card;   // _mixins SECTION 4 ----------------------------
+            border: 1px solid;
 
-        &-progress {
-            padding: 5px 0 20px;
-        
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
 
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+            &-progress {
+                padding: 5px 0 20px;
             
 
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: html-bar 10s ease-in 1s infinite;
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: html-bar 10s ease-in 1s infinite;
+                    }
+
+
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#ff3c00, coral);     // _mixins SECTION  1 ----------------------------
+                        animation: html-span 10s ease-in 1s infinite;
+                    }
                 }
+            }
+        }
 
 
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#ff3c00, coral);     // _mixins SECTION  1 ----------------------------
-                    animation: html-span 10s ease-in 1s infinite;
+        // css PROGRESS ------------------------
+        &__css {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
+
+            &-progress {
+                padding: 5px 0 20px;
+            
+
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: css-bar 10s ease-in 1s infinite;
+                    }
+
+
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#358ae0, #87ceeb);   // _mixins SECTION  1 
+                        animation: css-span 10s ease-in 1s infinite;
+                    }
+                }
+            }
+        }
+
+
+        // js PROGRESS ------------------------
+        &__js {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
+
+            &-progress {
+                padding: 5px 0 20px;
+            
+
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: js-bar 10s ease-in 1s infinite;
+                    }
+
+
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#f8c201, yellow);   // _mixins SECTION  1 
+                        animation: js-span 10s ease-in 1s infinite;
+                    }
+                }
+            }
+        }
+
+
+        // c PROGRESS ------------------------
+        &__c {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
+
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
+
+            &-progress {
+                padding: 5px 0 20px;
+            
+
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: c-bar 10s ease-in 1s infinite;
+                    }
+
+
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#002080, #0066ff);   // _mixins SECTION  1 
+                        animation: c-span 10s ease-in 1s infinite;
+                    }
+                }
+            }
+        }
+
+
+        // nodejs PROGRESS ------------------------
+        &__nodejs {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
+            @include border-card;   // _mixins SECTION 4 ----------------------------
+
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
+
+            &-progress {
+                padding: 5px 0 20px;
+            
+
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: nodejs-bar 10s ease-in 1s infinite;
+                    }
+
+
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#009933, #003300);   // _mixins SECTION  1 
+                        animation: nodejs-span 10s ease-in 1s infinite;
+                    }
                 }
             }
         }
     }
+    
 
+    &-part2 {
+        @extend %flex-column;      // _extend SECTION 1 ----------------------------
+        gap: 1rem;
 
-    // css PROGRESS ------------------------
-    &__css {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
+        // tailwindcss PROGRESS ------------------------
+        &__tailwindcss {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
 
-        &-progress {
-            padding: 5px 0 20px;
-        
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
 
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+            &-progress {
+                padding: 5px 0 20px;
             
 
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: css-bar 10s ease-in 1s infinite;
-                }
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: tailwindcss-bar 10s ease-in 1s infinite;
+                    }
 
 
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#358ae0, #87ceeb);   // _mixins SECTION  1 
-                    animation: css-span 10s ease-in 1s infinite;
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#009999, #00ffcc);   // _mixins SECTION  1 
+                        animation: tailwindcss-span 10s ease-in 1s infinite;
+                    }
                 }
             }
         }
-    }
 
 
-    // js PROGRESS ------------------------
-    &__js {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
+        // git PROGRESS ------------------------
+        &__git {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
 
-        &-progress {
-            padding: 5px 0 20px;
-        
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
 
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+            &-progress {
+                padding: 5px 0 20px;
             
 
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: js-bar 10s ease-in 1s infinite;
-                }
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: git-bar 10s ease-in 1s infinite;
+                    }
 
 
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#f8c201, yellow);   // _mixins SECTION  1 
-                    animation: js-span 10s ease-in 1s infinite;
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#751aff, #3333cc);   // _mixins SECTION  1 
+                        animation: git-span 10s ease-in 1s infinite;
+                    }
                 }
             }
         }
-    }
 
 
-    // c PROGRESS ------------------------
-    &__c {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
+        // vscode PROGRESS ------------------------
+        &__vscode {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
 
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
 
-        &-progress {
-            padding: 5px 0 20px;
-        
-
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+            &-progress {
+                padding: 5px 0 20px;
             
 
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: c-bar 10s ease-in 1s infinite;
-                }
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: vscode-bar 10s ease-in 1s infinite;
+                    }
 
 
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#002080, #0066ff);   // _mixins SECTION  1 
-                    animation: c-span 10s ease-in 1s infinite;
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#002db3, #1a53ff);   // _mixins SECTION  1 
+                        animation: vscode-span 10s ease-in 1s infinite;
+                    }
                 }
             }
         }
-    }
 
 
-    // nodejs PROGRESS ------------------------
-    &__nodejs {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
-        @include border-card;   // _mixins SECTION 4 ----------------------------
+        // adobeprem PROGRESS ------------------------
+        &__adobeprem {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
 
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
 
-        &-progress {
-            padding: 5px 0 20px;
-        
-
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+            &-progress {
+                padding: 5px 0 20px;
             
 
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: nodejs-bar 10s ease-in 1s infinite;
-                }
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: adobeprem-bar 10s ease-in 1s infinite;
+                    }
 
 
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#009933, #003300);   // _mixins SECTION  1 
-                    animation: nodejs-span 10s ease-in 1s infinite;
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#000066, #1a1aff);   // _mixins SECTION  1 
+                        animation: adobeprem-span 10s ease-in 1s infinite;
+                    }
                 }
             }
         }
-    }
 
 
-    // tailwindcss PROGRESS ------------------------
-    &__tailwindcss {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
+        // mail PROGRESS ------------------------
+        &__mail {
+            @extend %flex-column;   // _extend SECTION  1 ----------------------------
+            border: 1px solid white;
+            @include border-card;   // _mixins SECTION 4 ----------------------------
 
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
+            
+            &-text {
+                @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
+            }
 
-        &-progress {
-            padding: 5px 0 20px;
-        
-
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+            &-progress {
+                padding: 5px 0 20px;
             
 
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: tailwindcss-bar 10s ease-in 1s infinite;
-                }
+                &-bar {
+                    @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
+                
+
+                    &2 {
+                        @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
+                        animation: mail-bar 10s ease-in 1s infinite;
+                    }
 
 
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#009999, #00ffcc);   // _mixins SECTION  1 
-                    animation: tailwindcss-span 10s ease-in 1s infinite;
+                    &-span {
+                        @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
+                        @include span-bar (#0033cc, #00b8e6);   // _mixins SECTION  1 
+                        animation: mail-span 10s ease-in 1s infinite;
+                    }
                 }
             }
         }
-    }
-
-
-    // git PROGRESS ------------------------
-    &__git {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
-
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
         }
-
-        &-progress {
-            padding: 5px 0 20px;
-        
-
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
-            
-
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: git-bar 10s ease-in 1s infinite;
-                }
-
-
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#751aff, #3333cc);   // _mixins SECTION  1 
-                    animation: git-span 10s ease-in 1s infinite;
-                }
-            }
-        }
-    }
-
-
-    // vscode PROGRESS ------------------------
-    &__vscode {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
-
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
-
-        &-progress {
-            padding: 5px 0 20px;
-        
-
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
-            
-
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: vscode-bar 10s ease-in 1s infinite;
-                }
-
-
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#002db3, #1a53ff);   // _mixins SECTION  1 
-                    animation: vscode-span 10s ease-in 1s infinite;
-                }
-            }
-        }
-    }
-
-
-    // adobeprem PROGRESS ------------------------
-    &__adobeprem {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
-
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
-
-        &-progress {
-            padding: 5px 0 20px;
-        
-
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
-            
-
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: adobeprem-bar 10s ease-in 1s infinite;
-                }
-
-
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#000066, #1a1aff);   // _mixins SECTION  1 
-                    animation: adobeprem-span 10s ease-in 1s infinite;
-                }
-            }
-        }
-    }
-
-
-    // mail PROGRESS ------------------------
-    &__mail {
-        @extend %flex-column;   // _extend SECTION  1 ----------------------------
-        border: 1px solid white;
-        @include border-card;   // _mixins SECTION 4 ----------------------------
-
-        
-        &-text {
-            @extend %skill-overview-text;   // _extend SECTION  2 ----------------------------
-        }
-
-        &-progress {
-            padding: 5px 0 20px;
-        
-
-            &-bar {
-                @extend %progress-bar1;     // _extend SECTION  3 ----------------------------
-            
-
-                &2 {
-                    @extend %progress-bar2;     // _extend SECTION  3 ----------------------------
-                    animation: mail-bar 10s ease-in 1s infinite;
-                }
-
-
-                &-span {
-                    @extend %progress-bar-span;     // _extend SECTION  3 ----------------------------
-                    @include span-bar (#0033cc, #00b8e6);   // _mixins SECTION  1 
-                    animation: mail-span 10s ease-in 1s infinite;
-                }
-            }
-        }
-    }
 }
 
 
