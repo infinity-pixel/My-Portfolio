@@ -2,6 +2,11 @@
 
 @media (min-width: 1025px) {
 
+    body {
+        gap: 10rem;
+    }
+
+
     .about-area {
         @include default-text (1.2rem, 1.3);
         @include default-h1 (3.5rem);
@@ -32,15 +37,57 @@
 
 
     .skill-area {
-        
-        .skill-container {
-            width: 70%;
-        }
-        
+
         .skill__overview {
             padding: 70px 0;
-            width: 70%;
-            gap: 4rem;
+            width: 90%;
+            justify-content: space-evenly;
+            // gap: 4.5rem;
+        
+
+            .skill__overview-part1 {
+                gap: 4rem;
+                width: 400px;
+
+                &__html-text span{
+                    font-size: 23px;
+                }
+                &__css-text span{
+                    font-size: 23px;
+                }
+                &__js-text span{
+                    font-size: 23px;
+                }
+                &__c-text span{
+                    font-size: 23px;
+                }
+                &__nodejs-text span{
+                    font-size: 23px;
+                }
+            }
+
+
+            .skill__overview-part2 {
+                gap: 4rem;
+                width: 400px;
+
+
+                &__tailwindcss-text span{
+                    font-size: 23px;
+                }
+                &__git-text span{
+                    font-size: 23px;
+                }
+                &__vscode-text span{
+                    font-size: 23px;
+                }
+                &__adobeprem-text span{
+                    font-size: 23px;
+                }
+                &__mail-text span{
+                    font-size: 23px;
+                }
+            }
         }
     }
 
@@ -83,6 +130,63 @@
             }
         }
     }
+
+
+    .skill-area {
+
+        .skill__overview {
+            padding: 70px 0;
+            width: 90%;
+            justify-content: space-evenly;
+            // gap: 4.5rem;
+        
+
+            .skill__overview-part1 {
+                gap: 4rem;
+                width: 500px;
+
+                &__html-text span{
+                    font-size: 23px;
+                }
+                &__css-text span{
+                    font-size: 23px;
+                }
+                &__js-text span{
+                    font-size: 23px;
+                }
+                &__c-text span{
+                    font-size: 23px;
+                }
+                &__nodejs-text span{
+                    font-size: 23px;
+                }
+            }
+
+
+            .skill__overview-part2 {
+                gap: 4rem;
+                width: 500px;
+
+
+                &__tailwindcss-text span{
+                    font-size: 23px;
+                }
+                &__git-text span{
+                    font-size: 23px;
+                }
+                &__vscode-text span{
+                    font-size: 23px;
+                }
+                &__adobeprem-text span{
+                    font-size: 23px;
+                }
+                &__mail-text span{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+
 
     .contact-subcontainer .contact__section-1 .contact__section-1__content .contact__section-1__content-social .icon {
         font-size: 4rem;

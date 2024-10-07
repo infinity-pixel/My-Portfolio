@@ -3,7 +3,7 @@
 @media (min-width: 769px) {
     
     body {
-        gap: 10rem;
+        // gap: 10rem;
 
 
         img {
@@ -165,50 +165,71 @@
 
 
     .skill-area { 
-        .skill__overview__html-text span{
-            font-size: 25px;
-        }
-        .skill__overview__css-text span{
-            font-size: 25px;
-        }
-        .skill__overview__js-text span{
-            font-size: 25px;
-        }
-        .skill__overview__c-text span{
-            font-size: 25px;
-        }
-        .skill__overview__nodejs-text span{
-            font-size: 25px;
-        }
-        .skill__overview__tailwindcss-text span{
-            font-size: 25px;
-        }
-        .skill__overview__git-text span{
-            font-size: 25px;
-        }
-        .skill__overview__vscode-text span{
-            font-size: 25px;
-        }
-        .skill__overview__adobeprem-text span{
-            font-size: 25px;
-        }
-        .skill__overview__mail-text span{
-            font-size: 25px;
-        }
-    }
 
-    .skill-area {
-
-        .skill-container {
-            width: 80%;
-        }
-        
         .skill__overview {
             padding: 70px 0;
-            width: 70%;
-            gap: 4rem;
+            width: 90%;
+            justify-content: space-evenly;
+        
+
+            .skill__overview-part1 {
+                gap: 4rem;
+                width: 300px;
+
+                &__html-text span{
+                    font-size: 23px;
+                }
+                &__css-text span{
+                    font-size: 23px;
+                }
+                &__js-text span{
+                    font-size: 23px;
+                }
+                &__c-text span{
+                    font-size: 23px;
+                }
+                &__nodejs-text span{
+                    font-size: 23px;
+                }
+            }
+
+
+            .skill__overview-part2 {
+                gap: 4rem;
+                width: 300px;
+
+
+                &__tailwindcss-text span{
+                    font-size: 23px;
+                }
+                &__git-text span{
+                    font-size: 23px;
+                }
+                &__vscode-text span{
+                    font-size: 23px;
+                }
+                &__adobeprem-text span{
+                    font-size: 23px;
+                }
+                &__mail-text span{
+                    font-size: 23px;
+                }
+            }
         }
     }
+
+    // .skill-area {
+
+    //     .skill-container {
+    //         // width: 80%;
+    //     }
+        
+    //     .skill__overview {
+    //         padding: 70px 0;
+    //         width: 70%;
+    //         gap: 4rem;
+    //     }
+    // }
 
 
     .portfolio-area {

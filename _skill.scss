@@ -15,13 +15,19 @@
 
 
 .skill__overview {
-    @extend %flex-column;      // _extend SECTION 1 ----------------------------
+    // @extend %flex-column;      // _extend SECTION 1 ----------------------------
     gap: 1rem;
+
+    display: flex;
+    flex-wrap: wrap;
+
 
 
     &-part1 {
         @extend %flex-column;      // _extend SECTION 1 ----------------------------
         gap: 1rem;
+        width: 100%;
+        
 
         // html PROGRESS ------------------------
         &__html {
@@ -201,6 +207,7 @@
     &-part2 {
         @extend %flex-column;      // _extend SECTION 1 ----------------------------
         gap: 1rem;
+        width: 100%;
 
         // tailwindcss PROGRESS ------------------------
         &__tailwindcss {
