@@ -1,0 +1,132 @@
+.contact-area {
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
+
+.contact-container {
+    background-color: $dark-secondary-color;
+    border: 3px solid lightpink;
+    border-radius: 20px;
+    
+    .contact-subcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4rem;
+        padding: 20px;
+        
+        .contact__section-1 {
+            @include border-card;
+            width: 100%;
+            padding: 0px 0px 40px 0px;
+            background-color: $dark-quarternary-color;
+            
+            &__content {
+                @extend %flex-column;
+                gap: 2rem;
+
+
+                &-text p {
+                    text-align: center;
+                }
+                
+                p:not(:nth-child(2)):hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+    
+                &-social {
+                    display: flex;
+                    justify-content: space-evenly;
+    
+                    .icon {
+                        @include mixin-social-font-size;
+                    }
+
+                    .icon:nth-child(1):hover {
+                        cursor: pointer;
+                        color: #1877F2;
+                    }
+                    .icon:nth-child(2):hover {
+                        cursor: pointer;
+                        color: #cd486b  ;
+                    }
+                    .icon:nth-child(3):hover {
+                        cursor: pointer;
+                        color: #0077B5;
+                    }
+                    .icon:nth-child(4):hover {
+                        cursor: pointer;
+                        color: #FF0000;
+                    }
+                    .icon:nth-child(5):hover {
+                        cursor: pointer;
+                        color: #25D366
+                        ;
+                    }
+                    .icon:nth-child(6):hover {
+                        cursor: pointer;
+                        color: #1DA1F2
+                        ;
+                    }
+                }
+            }
+
+            
+        }
+
+
+        .contact__section-2 {
+            @include border-card;
+            width: 100%;
+            padding-bottom: 40px;
+            background-color: $dark-quarternary-color;
+
+
+            &__content {
+                text-align: center;
+            }
+
+            &__content-box {
+                @extend %flex-column;
+                width: 100%;
+                align-items: center;
+                gap: 1rem;
+                
+
+
+                &1 {
+                    @extend %flex-column;
+                    width: inherit;
+                    align-items: center;
+                    gap: 1rem;
+
+                    input {
+                        @include input-box;
+                    }
+                }
+
+
+                &2 {
+                    display: flex;
+                    justify-content: center;
+                    width: inherit;
+                    height: 200px;
+
+                    input {
+                        @include input-box;     // _mixins SECTION 5 -------------
+                        height: 200px;
+                    }
+                }
+            } 
+        }
+
+
+        .contact__section-3 {
+            width: 100%;
+            border: 1px solid white;
+            
+        }
+    }
+}

@@ -1,0 +1,51 @@
+// _media-PC-L -----------------------------
+
+@media (min-width: 1700px) {
+    .about-area {
+        max-width: 1700px;
+        @include default-text (1.5rem, 1.6);
+        @include default-h1 (4rem);
+        @include default-h2 (2.7rem);
+        @include default-h3 (4rem, 1);   
+        
+        .about-subcontainer {
+
+            .about__text {
+                height: 100%;
+                align-items: space-between;
+            }
+        }
+    }
+
+    .resume-area {
+        max-width: 1700px;
+        @include default-text (1.3rem, 1.6);
+        @include default-h1 (4rem);
+        @include default-h2 (2.2rem);
+        @include default-h3 (3.7rem, 1);
+    }
+
+    .skill-area {
+        max-width: 1700px;
+        @include default-text (1.3rem, 1.6);
+        @include default-h1 (4rem);
+        @include default-h2 (2.2rem);
+        @include default-h3 (3.7rem, 1);
+    }
+
+    .portfolio-area {
+        max-width: 1700px;
+        @include default-text (1.3rem, 1.6);
+        @include default-h1 (4rem);
+        @include default-h2 (2.2rem);
+        @include default-h3 (3.7rem, 1);
+    }
+
+    .contact-area {
+        max-width: 1700px;
+        @include default-text (1.3rem, 1.6);
+        @include default-h1 (4rem);
+        @include default-h2 (2.2rem);
+        @include default-h3 (3.7rem, 1);
+    }
+}

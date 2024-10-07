@@ -1,0 +1,89 @@
+// SECTION  1 ----------------------------
+@mixin span-bar ($bgcolor: color, $brcolor: background-color) {
+    background-color: $bgcolor;
+    border: 1px solid $brcolor;
+}
+
+
+// SECTION  2 ----------------------------
+@mixin default-text ($mixin-text-font-size: $default-text-font-size, $mixin-text-line-height: $default-text-line-height, $mixin-text-word-spacing: $default-text-word-spacing) {
+    p {
+        font-size: $mixin-text-font-size;
+        line-height: $mixin-text-line-height;
+        word-spacing: $mixin-text-word-spacing;
+    }
+}
+
+
+// SECTION  3 ----------------------------
+@mixin default-h1 ($mixin-h1-font-size: $default-h1-font-size, $mixin-h1-line-height: $default-h1-line-height,  $mixin-h1-word-spacing: $default-h1-word-spacing) {
+    h1 {
+        font-size: $mixin-h1-font-size;
+        line-height: $mixin-h1-line-height;
+        word-spacing: $mixin-h1-word-spacing;
+    }
+}
+@mixin default-h2 ($mixin-h2-font-size: $default-h2-font-size, $mixin-h2-line-height: $default-h2-line-height,  $mixin-h2-word-spacing: $default-h2-word-spacing) {
+    h2 {
+        font-size: $mixin-h2-font-size;
+        line-height: $mixin-h2-line-height;
+        word-spacing: $mixin-h2-word-spacing;
+    }
+}
+@mixin default-h3 ($mixin-h3-font-size: $default-h3-font-size, $mixin-h3-line-height: $default-h3-line-height,  $mixin-h3-word-spacing: $default-h3-word-spacing) {
+    h3 {
+        font-size: $mixin-h3-font-size;
+        line-height: $mixin-h3-line-height;
+        word-spacing: $mixin-h3-word-spacing;
+    }
+}
+@mixin default-h4 ($mixin-h4-font-size: $default-h4-font-size, $mixin-h4-line-height: $default-h4-line-height,  $mixin-h4-word-spacing: $default-h4-word-spacing) {
+    h4 {
+        font-size: $mixin-h4-font-size;
+        line-height: $mixin-h4-line-height;
+        word-spacing: $mixin-h4-word-spacing;
+    }
+}
+
+
+// SECTION 4 --------------------------------
+@mixin border-card ($border-card-padding: 10px) {
+    border-radius: 20px;
+    box-shadow: -5px 5px 7px darkgrey;
+    background-color: $dark-quarternary-color;
+    padding: $border-card-padding;
+}
+
+
+@mixin border-card-none ($border-card-padding: 10px){
+    border-radius: none;
+    box-shadow: none;
+    background-color: $dark-quarternary-color;
+    padding: $border-card-padding;
+}
+
+
+// SECTION 5 --------------------------------
+@mixin input-box {
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: $default-text-font-size;
+}
+
+
+// SECTION 6 --------------------------------
+@mixin navbar-style ($navbar-padding: 0 7px) {
+    padding: $navbar-padding;
+    font-size: $default-text-font-size;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+// SECTION 7 ---------------------
+@mixin mixin-social-font-size ($social-font-size: 1.5rem) {
+    font-size: $social-font-size;
+}

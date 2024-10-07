@@ -1,0 +1,67 @@
+.about-area {
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.about-container {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    background-color: $dark-secondary-color;
+    border: 3px solid lightcoral;
+    border-radius: 20px;
+    
+    
+    & legend {
+        margin: 0 auto;
+    }
+    
+    
+    .about-subcontainer {
+        width: 95%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+
+        .about__image {
+            margin: 0 auto;
+            
+            h2 {
+                text-align: center;
+                color: lightgreen;
+            }
+            
+            
+            & img{
+                border-radius: 50%;
+            }
+            
+        }
+        
+        
+        .about__text {
+            @extend %flex-column;
+            
+
+            h3 {
+                @include default-h3;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+
+
+        .about__text h3 {
+            @include default-h3;    // _mixins SECTION 3
+            color: lightseagreen;
+            text-align: center;
+        }
+
+
+    }
+}

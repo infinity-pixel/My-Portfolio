@@ -1,0 +1,329 @@
+// _media-laptop --------------------------------
+
+@media (min-width: 769px) {
+    
+    body {
+        gap: 10rem;
+
+
+        img {
+            max-width: 850px;
+            margin: auto;
+        }
+    }
+
+    .header {
+        height: 250px;
+        
+        &__logo {
+            display: flex;
+            height: 125px;
+            
+            
+            img {
+                margin: auto 0;
+                width: 100px;
+            }
+        }
+        
+        .header__navbar {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 125px;
+            align-items: center;
+            
+            
+            &__list {
+                display: flex;
+                justify-content: center;
+                gap: 3rem;
+            }
+            
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+    
+    .about-area {
+        width: 100%;
+        @include default-text (1.1rem, 1.3);
+        @include default-h1 (3.5rem);
+        @include default-h2 (2.5rem);
+        @include default-h3 (3rem, 1);
+
+        .about-container {
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 60px;
+        }
+
+        .about-subcontainer {
+            // display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3rem;
+            
+            
+            .about__image {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                width: 200px;
+                flex-grow: 1;
+            }
+
+
+            .about__text {
+                width: 200px;
+                flex-grow: 1;
+
+                h3 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    
+        
+    .resume-area .resume-container{
+        @include default-text (1.4rem, 1.3);
+        @include default-h1 (4rem);
+        @include default-h2 (2.5rem);
+        @include default-h3 (3rem, 1);
+
+        h3 {
+            font-size: $default-h3-font-size*1.7;
+        }
+    }
+
+    .resume-area {
+        width: 100%;
+    }
+    .resume-container {
+        gap: 7rem;
+
+        .resume__experience {
+            max-width: 950px;
+            justify-content: center;
+
+            
+            &__image {
+                width: 80%;
+                height: fit-content;
+            }
+            
+            &__description {
+                width: 370px;
+                padding: 10px 50px;
+            }
+        }
+    }
+
+
+    .resume-area {
+
+        .resume__education {
+            max-width: 950px;
+            align-items: center;
+
+            &__image {
+                width: 80%;
+                height: fit-content;
+                margin: 0 auto;
+            }
+
+            &-pp {
+                display: flex;
+    
+                
+                h3 {
+                    font-size: 20px;
+                }
+    
+                p {
+                    font-size: 20px;
+                }
+                
+                
+                .resume__education1 {
+                    width: 46%;
+                    padding: 0;
+                }
+                .resume__education2 {
+                    width: 46%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+
+    .skill-area { 
+        .skill__overview__html-text span{
+            font-size: 25px;
+        }
+        .skill__overview__css-text span{
+            font-size: 25px;
+        }
+        .skill__overview__js-text span{
+            font-size: 25px;
+        }
+        .skill__overview__c-text span{
+            font-size: 25px;
+        }
+        .skill__overview__nodejs-text span{
+            font-size: 25px;
+        }
+        .skill__overview__tailwindcss-text span{
+            font-size: 25px;
+        }
+        .skill__overview__git-text span{
+            font-size: 25px;
+        }
+        .skill__overview__vscode-text span{
+            font-size: 25px;
+        }
+        .skill__overview__adobeprem-text span{
+            font-size: 25px;
+        }
+        .skill__overview__mail-text span{
+            font-size: 25px;
+        }
+    }
+
+    .skill-area {
+
+        .skill-container {
+            width: 80%;
+        }
+        
+        .skill__overview {
+            padding: 70px 0;
+            width: 70%;
+            gap: 4rem;
+        }
+    }
+
+
+    .portfolio-area {
+        .portfolio-subcontainer {
+            height: 1500px;
+            align-content: space-evenly;
+            justify-content: space-evenly;
+            row-gap: 2rem;
+        }
+
+        .portfolio-1, .portfolio-2, .portfolio-3, .portfolio-4, .portfolio-5, .portfolio-6 {
+            width: 325px;
+        }
+    }
+
+
+    .portfolio-container>.portfolio-subcontainer {
+        gap: 2rem;
+        
+        &>.portfolio-1 { 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-2 { 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-3 { 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-4 { 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-5 { 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-6 { 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+    }
+    
+
+    .contact-area {
+        @include default-text (1.4rem, 1.3);
+        @include default-h1 (3.5rem);
+        @include default-h2 (2.5rem);
+        @include default-h3 (3rem, 1);
+
+        .contact-container {
+            // padding-bottom: 50px;
+            // padding: 0 40px 50px;
+            background-color: $dark-quarternary-color;
+
+            h1 {
+                margin: 0;
+            }
+        }
+        
+        .contact-subcontainer {
+            @include border-card-none;
+            width: inherit;
+            height: inherit;
+            padding-bottom: 40px;
+            gap: 1rem;
+
+
+            .contact__section-1{
+                @include border-card-none;
+                width: 250px;
+                flex-grow: 1;
+
+                &__content {
+                    // @extend %flex-column;
+                    gap: 2rem;
+    
+    
+                    &-text p {
+                        text-align: center;
+                    }
+        
+                    &-social {
+                        display: flex;
+                        justify-content: space-evenly;
+        
+                        .icon {
+                            @include mixin-social-font-size;
+                        }
+                    }
+                }
+            }
+            .contact__section-2{
+                @include border-card-none;
+                width: 250px;
+                flex-grow: 1;
+            }
+        }
+    }
+
+    .contact-subcontainer .contact__section-1 .contact__section-1__content .contact__section-1__content-social .icon {
+        font-size: 2.5rem;
+    }
+}

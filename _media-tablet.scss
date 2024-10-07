@@ -1,0 +1,146 @@
+// _media-tablet --------------------
+
+@media (min-width: 426px) {
+
+    body {
+        @include default-text (1.3rem, 1.6);
+        @include default-h1 (3rem);
+        @include default-h2 (2.2rem);
+        @include default-h3 (3.7rem, 1);
+    }
+    
+    .header__navbar {
+        width: 100%;
+        
+        a {
+            font-size: 1.2rem;
+        }
+    }
+
+
+    .resume-container {
+        padding: 60px 20px 70px;
+    }
+
+    .resume__experience {
+        justify-content: center;
+    }
+
+    .resume-area .resume__experience__description {
+        padding: 40px;
+    }
+
+    .resume-container>.resume__experience, .resume-container>.resume__education {
+        padding: 40px 20px;
+    }
+
+    .resume-area .resume__education-pp {
+        width: 90%;
+    }
+    
+
+    .portfolio-container>.portfolio-subcontainer {
+        gap: 10rem;
+        
+        &>.portfolio-1 {
+            padding: 25px; 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-2 {
+            padding: 25px; 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-3 {
+            padding: 25px; 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-4 {
+            padding: 25px; 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-5 {
+            padding: 25px; 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        &>.portfolio-6 {
+            padding: 25px; 
+
+            p:first-child {
+                font-size: $default-text-font-size*2;
+            }
+        }
+        
+        & div{
+            padding: 5px;
+        }  
+    }
+
+
+    .skill__overview {
+        width: 85%;
+        margin: 0 auto;
+        gap: 2rem;
+        padding-bottom: 25px;
+    }
+
+
+    .skill-area { 
+        .skill__overview__html-text span{
+            font-size: 20px;
+        }
+        .skill__overview__css-text span{
+            font-size: 20px;
+        }
+        .skill__overview__js-text span{
+                font-size: 20px;
+        }
+        .skill__overview__c-text span{
+            font-size: 20px;
+        }
+        .skill__overview__nodejs-text span{
+            font-size: 20px;
+        }
+        .skill__overview__tailwindcss-text span{
+            font-size: 20px;
+        }
+        .skill__overview__git-text span{
+            font-size: 20px;
+        }
+        .skill__overview__vscode-text span{
+            font-size: 20px;
+        }
+        .skill__overview__adobeprem-text span{
+            font-size: 20px;
+        }
+        .skill__overview__mail-text span{
+            font-size: 20px;
+        }
+
+    }
+
+
+    .contact-subcontainer .contact__section-1 .contact__section-1__content .contact__section-1__content-social .icon {
+        font-size: 3rem;
+    }
+
+    .contact-container .contact-subcontainer .contact__section-2 .contact__section-2__content-box{
+        // padding: 0 70px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

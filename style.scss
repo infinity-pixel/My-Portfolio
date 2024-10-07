@@ -1,0 +1,73 @@
+@import "variables";
+@import "mixins";
+@import "extend";
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    @extend %flex-column;
+    gap: 5rem;
+    background-color: $dark-primary-color;     // _variables SECTION 3 ----------
+    color: $dark-primary-text-color;      // _variables SECTION 3 ----------
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    @include default-text;  // _mixins Section 2, _variables Section 1
+    @include default-h1;    // _mixins Section 2, _variables Section 2
+}
+
+
+legend {
+    margin: 0 auto;
+}
+
+
+// Header Section ---------------------------
+@import "header";
+
+// About Section ---------------------------
+@import "about";
+
+// Resume Section ---------------------------
+@import "resume";
+
+// Skill Section ---------------------------
+@import "skill";
+
+// Portfolio Section ---------------------------
+@import "portfolio";
+
+// Contact Section ---------------------------
+@import "contact";
+
+
+// Footer Section ---------------------------
+footer {
+    border-top: 1px solid gray;
+    margin-top: 10px;
+    
+    & h4 {
+        font-size: 15px;
+        font-weight: normal;
+        text-align: center;
+        color: #f0f0f0;
+    }
+}
+
+
+
+// ------------- Responsives & Media Queries -------------
+
+// Tablet View -----------------
+@import "media-tablet";
+
+// Laptop View -----------------
+@import "media-laptop";
+
+// PC View -----------------
+@import "media-pc";
+
+// PC-L View ----------------
+@import "media-pc-L";

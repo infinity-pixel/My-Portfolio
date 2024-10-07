@@ -1,0 +1,226 @@
+.portfolio-area {
+    padding: 10px;
+    margin: auto;
+
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+.portfolio-container {
+    // @extend %legend-center;     // _extend Section 4 ------------------
+    padding: 20px;
+    background-color: $dark-secondary-color;
+    border: 3px solid orange;
+    border-radius: 20px;
+    margin: 0 auto;
+    
+    .portfolio-subcontainer {
+        padding: 10px;
+        // @extend %flex-column;   // _extend Section 1 ------------------
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+        
+
+        .portfolio-1 {
+            @include border-card;   // _mixins SECTION 4
+            padding: 15px;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+                animation: card-hover 0.1s linear alternate forwards;
+
+                @keyframes card-hover {
+                    from {transform: translateY(0px);}
+                    to {transform: translateY(-10px);}
+                }
+            }
+
+
+            &__text p:first-child {
+                font-size: $default-text-font-size*1.5;
+                font-weight: bold;
+            } 
+
+            & a {
+                text-decoration: none;
+                color: red;
+
+                &:hover{
+                    box-shadow: 2px 2px 30px rgba(255, 0, 0, 0.334), -2px 2px 30px rgba(255, 0, 0, 0.334), 2px -2px 30px rgba(255, 0, 0, 0.334), -2px -2px 30px rgba(255, 0, 0, 0.334);
+                    background-color: rgba(255, 0, 0, 0.334);
+                }
+            }
+            
+        }
+
+        .portfolio-2 {
+            @include border-card;   // _mixins SECTION 4
+            padding: 15px;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+                animation: card-hover 0.1s linear alternate forwards;
+
+                @keyframes card-hover {
+                    from {transform: translateY(0px);}
+                    to {transform: translateY(-10px);}
+                }
+            }
+
+            &__text p:first-child {
+                font-size: $default-text-font-size*1.5;
+                font-weight: bold;
+            } 
+                
+
+            & a {
+                text-decoration: none;
+                color: red;
+
+                &:hover{
+                    box-shadow: 2px 2px 30px rgba(255, 0, 0, 0.334), -2px 2px 30px rgba(255, 0, 0, 0.334), 2px -2px 30px rgba(255, 0, 0, 0.334), -2px -2px 30px rgba(255, 0, 0, 0.334);
+                    background-color: rgba(255, 0, 0, 0.334);
+                }
+            }
+            
+        }
+
+        .portfolio-3 {
+            @include border-card;
+            padding: 15px;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+                animation: card-hover 0.1s linear alternate forwards;
+
+                @keyframes card-hover {
+                    from {transform: translateY(0px);}
+                    to {transform: translateY(-10px);}
+                }
+            }
+
+            &__text p:first-child {
+                font-size: $default-text-font-size*1.5;
+                font-weight: bold;
+            } 
+                
+
+            & a {
+                text-decoration: none;
+                color: red;
+
+                &:hover{
+                    box-shadow: 2px 2px 30px rgba(255, 0, 0, 0.334), -2px 2px 30px rgba(255, 0, 0, 0.334), 2px -2px 30px rgba(255, 0, 0, 0.334), -2px -2px 30px rgba(255, 0, 0, 0.334);
+                    background-color: rgba(255, 0, 0, 0.334);
+                }
+            }
+            
+        }
+
+        .portfolio-4 {
+            @include border-card;
+            padding: 15px;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+                animation: card-hover 0.1s linear alternate forwards;
+
+                @keyframes card-hover {
+                    from {transform: translateY(0px);}
+                    to {transform: translateY(-10px);}
+                }
+            }
+
+            &__text p:first-child {
+                font-size: $default-text-font-size*1.5;
+                font-weight: bold;
+            } 
+                
+
+            & a {
+                text-decoration: none;
+                color: red;
+
+                &:hover{
+                    box-shadow: 2px 2px 30px rgba(255, 0, 0, 0.334), -2px 2px 30px rgba(255, 0, 0, 0.334), 2px -2px 30px rgba(255, 0, 0, 0.334), -2px -2px 30px rgba(255, 0, 0, 0.334);
+                    background-color: rgba(255, 0, 0, 0.334);
+                }
+            }
+            
+        }
+
+        .portfolio-5 {
+            @include border-card;
+            padding: 15px;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+                animation: card-hover 0.1s linear alternate forwards;
+
+                @keyframes card-hover {
+                    from {transform: translateY(0px);}
+                    to {transform: translateY(-10px);}
+                }
+            }
+
+            &__text p:first-child {
+                font-size: $default-text-font-size*1.5;
+                font-weight: bold;
+            } 
+                
+
+            & a {
+                text-decoration: none;
+                color: red;
+
+                &:hover{
+                    box-shadow: 2px 2px 30px rgba(255, 0, 0, 0.334), -2px 2px 30px rgba(255, 0, 0, 0.334), 2px -2px 30px rgba(255, 0, 0, 0.334), -2px -2px 30px rgba(255, 0, 0, 0.334);
+                    background-color: rgba(255, 0, 0, 0.334);
+                }
+            }
+            
+        }
+        
+        .portfolio-6 {
+            @include border-card;
+            padding: 15px;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+                animation: card-hover 0.1s linear alternate forwards;
+
+                @keyframes card-hover {
+                    from {transform: translateY(0px);}
+                    to {transform: translateY(-10px);}
+                }
+            }
+
+            &__text p:first-child {
+                font-size: $default-text-font-size*1.5;
+                font-weight: bold;
+            } 
+                
+
+            & a {
+                text-decoration: none;
+                color: red;
+
+                &:hover{
+                    box-shadow: 2px 2px 30px rgba(255, 0, 0, 0.334), -2px 2px 30px rgba(255, 0, 0, 0.334), 2px -2px 30px rgba(255, 0, 0, 0.334), -2px -2px 30px rgba(255, 0, 0, 0.334);
+                    background-color: rgba(255, 0, 0, 0.334);
+                }
+            }
+            
+        }
+    }
+}

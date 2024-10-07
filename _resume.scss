@@ -1,0 +1,106 @@
+.resume-area {
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+
+
+    & img {
+        border-radius: 20px
+    }
+}
+
+
+.resume-container {
+    // @extend %flex-column;   // _extend SECTION  1 -------
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6rem;
+    background-color: $dark-secondary-color;
+    border: 3px solid #add8e6;
+    border-radius: 20px;
+    padding: 20px 10px 50px;
+
+    // .resume__title h1 {
+    // }
+    
+
+    .resume__experience {
+        // @extend %flex-column;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        background-color: $dark-tertiary-color;
+        border: 2px solid #4ebce1;
+        border-radius: 10px;
+        padding: 20px 10px 40px;
+        margin: 0 auto;
+
+
+
+        &__description {
+            @include border-card;
+            @include default-h3;
+            padding: 20px;
+            p:last-child {
+                text-align: justify;
+            }
+
+
+            & h3 {
+                color: tomato;
+                text-decoration: underline;
+            }
+            
+        }
+    }
+
+
+    .resume__education {
+        background-color: $dark-tertiary-color;
+        border: 2px solid #67f6ea;
+        border-radius: 10px;
+        padding: 20px 10px 40px;
+        margin: 0 auto;
+        
+        &__description {
+            @extend %flex-column;
+            @include default-h3;
+            line-height: 0;
+            gap: 3rem;
+            margin: 0 auto;
+            
+            
+            & h3 {
+                color: tomato;
+                text-decoration: underline;
+            }
+            
+            
+            .resume__education-pp {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                // align-items: center;
+                
+                gap: 3rem;
+                
+                
+                .resume__education1 {
+                    // width: 80%;
+                    @include border-card;   // _mixins SECTION 4
+                    
+                }
+                
+                
+                .resume__education2 {
+                    // width: 80%;
+                    @include border-card;   // _mixins SECTION 4
+                    
+                }
+            }
+        }
+    }
+}
+
+
