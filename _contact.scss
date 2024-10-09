@@ -19,56 +19,59 @@
         .contact__section-1 {
             @include border-card;
             width: 100%;
-            padding: 0px 0px 40px 0px;
+            padding: 10px 0px 40px 0px;
             background-color: $dark-quarternary-color;
+
             
             &__content {
                 @extend %flex-column;
                 gap: 2rem;
 
 
-                &-text p {
-                    text-align: center;
+                &-text {
+                    a {
+                        color: rgb(252, 217, 217);
+                        text-decoration: underline;
+                        
+                        
+                        &:hover {
+                            color: #cd486b;
+                        }
+                    }
+                    
+                    
+                    p {
+                        text-align: center;
+                    }
                 }
                 
-                p:not(:nth-child(2)):hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-    
+                
                 &-social {
                     display: flex;
                     justify-content: space-evenly;
-    
+                    
                     .icon {
                         @include mixin-social-font-size;
+                        color: #f5f5f5;
                     }
 
-                    .icon:nth-child(1):hover {
-                        cursor: pointer;
+                    .icon1:hover {
                         color: #1877F2;
                     }
-                    .icon:nth-child(2):hover {
-                        cursor: pointer;
-                        color: #cd486b  ;
+                    .icon2:hover {
+                        color: #cd486b;
                     }
-                    .icon:nth-child(3):hover {
-                        cursor: pointer;
+                    .icon3:hover {
                         color: #0077B5;
                     }
-                    .icon:nth-child(4):hover {
-                        cursor: pointer;
+                    .icon4:hover {
                         color: #FF0000;
                     }
-                    .icon:nth-child(5):hover {
-                        cursor: pointer;
-                        color: #25D366
-                        ;
+                    .icon5:hover {
+                        color: #25D366;
                     }
-                    .icon:nth-child(6):hover {
-                        cursor: pointer;
-                        color: #1DA1F2
-                        ;
+                    .icon6:hover {
+                        color: #1DA1F2;
                     }
                 }
             }
@@ -85,48 +88,84 @@
 
 
             &__content {
-                text-align: center;
-            }
-
-            &__content-box {
-                @extend %flex-column;
-                width: 100%;
-                align-items: center;
-                gap: 1rem;
-                
+    
+                h2 {
+                    text-align: center;
+                    font-family: "Salsa", cursive;
+                    line-height: 1.5;
+                }
 
 
-                &1 {
+                &-box {
                     @extend %flex-column;
-                    width: inherit;
+                    width: 100%;
                     align-items: center;
                     gap: 1rem;
-
-                    input {
-                        @include input-box;
+                    
+    
+                    &-form {
+                        @extend %flex-column;
+                        width: inherit;
+                        align-items: center;
+                        gap: 1rem;
+    
+                        input {
+                            @include input-box;
+    
+    
+                            &:focus {
+                                outline: 3px solid orange;
+                                // border: 3px solid orange;
+                            }
+                        }
+                        
+                        textarea {
+                            @include input-box;
+                            font-family: Arial, Helvetica, sans-serif;
+                            height: 200px;
+                            padding: 10px;
+                            outline: none;
+                            border-bottom-right-radius: 0;
+                            
+                            
+                            &:focus {
+                                outline: 3px solid tomato;
+                            }
+                        }
+    
+                        .btn-outline-primary {
+                            font-size: $default-text-font-size;
+                            font-weight: 500;
+                            width: 80%;
+                            border-radius: 10px;
+                            height: 40px;
+                            background-color: lightpink;
+                            border: none;
+                            
+    
+                            &:hover {
+                                cursor: pointer;
+                                background-color: #cd486b;
+                                color: #f5f5f5;
+                            }
+    
+                            &:active {
+                                background-color: maroon;
+                            }
+                        }
                     }
-                }
+            }
 
 
-                &2 {
-                    display: flex;
-                    justify-content: center;
-                    width: inherit;
-                    height: 200px;
-
-                    input {
-                        @include input-box;     // _mixins SECTION 5 -------------
-                        height: 200px;
-                    }
-                }
-            } 
-        }
-
-
-        .contact__section-3 {
-            width: 100%;
-            border: 1px solid white;
-            
-        }
+            }
+        } 
     }
+
+
+        // .contact__section-3 {
+        //     width: 100%;
+        //     border: 1px solid white;
+            
+        // }
 }
+

@@ -33,6 +33,7 @@
             &:hover {
                 cursor: pointer;
                 animation: card-hover 0.1s linear alternate forwards;
+                // background-color: orange;
 
                 @keyframes card-hover {
                     from {transform: translateY(0px);}
@@ -41,14 +42,18 @@
             }
 
 
-            &__text p:first-child {
-                font-size: $default-text-font-size*1.5;
-                font-weight: bold;
-            } 
+            &__text {
+            
+                p:first-child {
+                    font-size: $default-text-font-size*1.1;
+                    font-weight: bold;
+                }
+            }
 
             & a {
                 text-decoration: none;
                 color: red;
+
 
                 &:hover{
                     box-shadow: 2px 2px 30px rgba(255, 0, 0, 0.334), -2px 2px 30px rgba(255, 0, 0, 0.334), 2px -2px 30px rgba(255, 0, 0, 0.334), -2px -2px 30px rgba(255, 0, 0, 0.334);
@@ -74,7 +79,7 @@
             }
 
             &__text p:first-child {
-                font-size: $default-text-font-size*1.5;
+                font-size: $default-text-font-size*1.1;
                 font-weight: bold;
             } 
                 
@@ -107,7 +112,7 @@
             }
 
             &__text p:first-child {
-                font-size: $default-text-font-size*1.5;
+                font-size: $default-text-font-size*1.1;
                 font-weight: bold;
             } 
                 
@@ -140,7 +145,7 @@
             }
 
             &__text p:first-child {
-                font-size: $default-text-font-size*1.5;
+                font-size: $default-text-font-size*1.1;
                 font-weight: bold;
             } 
                 
@@ -173,7 +178,7 @@
             }
 
             &__text p:first-child {
-                font-size: $default-text-font-size*1.5;
+                font-size: $default-text-font-size*1.1;
                 font-weight: bold;
             } 
                 
@@ -206,7 +211,7 @@
             }
 
             &__text p:first-child {
-                font-size: $default-text-font-size*1.5;
+                font-size: $default-text-font-size*1.1;
                 font-weight: bold;
             } 
                 
